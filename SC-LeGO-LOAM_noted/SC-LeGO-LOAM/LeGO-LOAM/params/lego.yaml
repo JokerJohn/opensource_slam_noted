@@ -1,0 +1,103 @@
+# topic
+#pointCloudTopic: "/velodyne_points"
+pointCloudTopic: "/lslidar_point_cloud"
+#pointCloudTopic: "/os1_points"
+#pointCloudTopic: "/fused/velodyne_points"
+#pointCloudTopic: "/kitti/velo/pointcloud"
+imuTopic: "/imu/data"   # 这里不要用imu
+#"/fused/velodyne_points"
+#"/kitti_scan"
+#"/os1_points"
+#"/imu/data111"
+
+# vlp为true
+useCloudRing: false
+
+# tf init param
+x: 0.0
+y: 0.0
+z: 0.0
+roll: 0.0
+pitch: 0.0
+yaw: 0.0
+
+# VLP-16
+N_SCAN: 16
+Horizon_SCAN: 1800
+ang_res_x: 0.2
+ang_res_y: 2.0
+ang_bottom: 15.1
+groundScanInd: 7
+
+# VLP-32
+#N_SCAN: 32
+#Horizon_SCAN: 1800
+#ang_res_x: 0.2
+#ang_res_y: 1.333
+#ang_bottom: 30.67
+#groundScanInd: 20
+
+# VLP-128
+#N_SCAN: 128
+#Horizon_SCAN: 1800
+#ang_res_x: 0.2
+#ang_res_y: 0.3
+#ang_bottom: 25.0
+#groundScanInd: 10
+
+# ouster
+#N_SCAN: 64
+#Horizon_SCAN: 1024
+#ang_res_x: 0.35
+#ang_res_y: 0.52
+#ang_bottom: 16.7
+#groundScanInd: 15
+
+#extern const int N_SCAN = 64;
+#extern const int Horizon_SCAN = 1024;
+#extern const float ang_res_x = 360.0 / float(Horizon_SCAN);
+#extern const float ang_res_y = 33.2 / float(N_SCAN - 1);
+#extern const float ang_bottom = 16.6 + 0.1;
+#extern const int groundScanInd = 15;
+
+#// VLP-32C
+#//extern const int N_SCAN = 32;
+#//extern const int Horizon_SCAN = 1800;
+#//extern const float ang_res_x = 360.0 / float(Horizon_SCAN);
+#//extern const float ang_res_y = 41.33 / float(N_SCAN - 1);
+#//extern const float ang_bottom = 30.67;
+#//extern const int groundScanInd = 20;
+#
+#// // HDL-32E
+#// extern const int N_SCAN = 32;
+#// extern const int Horizon_SCAN = 1800;
+#// extern const float ang_res_x = 360.0/float(Horizon_SCAN);
+#// extern const float ang_res_y = 41.33/float(N_SCAN-1);
+#// extern const float ang_bottom = 30.67;
+#// extern const int groundScanInd = 20;
+#
+#// VLS-128
+#// extern const int N_SCAN = 128;
+#// extern const int Horizon_SCAN = 1800;
+#// extern const float ang_res_x = 0.2;
+#// extern const float ang_res_y = 0.3;
+#// extern const float ang_bottom = 25.0;
+#// extern const int groundScanInd = 10;
+#
+#// Ouster users may need to uncomment line 159 in imageProjection.cpp
+#// Usage of Ouster imu data is not fully supported yet (LeGO-LOAM needs 9-DOF IMU), please just publish point cloud data
+#// Ouster OS1-16
+#// extern const int N_SCAN = 16;
+#// extern const int Horizon_SCAN = 1024;
+#// extern const float ang_res_x = 360.0/float(Horizon_SCAN);
+#// extern const float ang_res_y = 33.2/float(N_SCAN-1);
+#// extern const float ang_bottom = 16.6+0.1;
+#// extern const int groundScanInd = 7;
+#
+#// Ouster OS1-64
+#extern const int N_SCAN = 64;
+#extern const int Horizon_SCAN = 1024;
+#extern const float ang_res_x = 360.0 / float(Horizon_SCAN);
+#extern const float ang_res_y = 33.2 / float(N_SCAN - 1);
+#extern const float ang_bottom = 16.6 + 0.1;
+#extern const int groundScanInd = 15;
