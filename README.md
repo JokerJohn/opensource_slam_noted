@@ -3,3 +3,5 @@
 
 - floam_noted：loam/aloam改进版
 - SC-LeGO-LOAM_noted：lego loam + scan context回环检测
+- iscloam_noted：基于floam和Gtsam构建的slam系统，主要是运用ISC特征做回环检测。
+
