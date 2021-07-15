@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/xchu/github/hdl_graph_slam-master/cmake-build-debug/devel/setup.sh
